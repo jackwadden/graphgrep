@@ -2,6 +2,9 @@
 
 Graphgrep uses an experimental HyperScan API call hs_compile_graph() to ingest automata pattern matchers using explicit Glushkov/Homogeneous/Position automata, rather than PCRE.
 
+## Usage
+./graphgrep \<graph file\> \<input byte stream file\> \<number of iterations\>
+
 ## Producing graphs readable by hs_compile_graph()
 If you have an ANML automata, vasim can convert it to the .graph format using the --graph flag. Graphs can also be created programmatically or by hand using the following format:
 
